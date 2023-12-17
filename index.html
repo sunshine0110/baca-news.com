@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Baca-News</title>
+    <meta name="description" content="Selamat datang di Baca-News, sumber informasi terkini melalui blog dan tutorial kami. Temukan berita teknologi terbaru, tips, dan tutorial yang membahas berbagai aspek dunia digital. Baca-News, panduan terkini untuk menggali dan memahami teknologi modern."/>
+    <meta name="keywords" content="apple, android, game, pc, gaming, iphone, technology, tutorials, reviews, software, hardware, gadgets, programming, cybersecurity, mobile apps, tech news, troubleshooting, tips and tricks, bro, innovation, digital world
+"/>
+    <meta name="author" content="Codingest"/>
+    <meta name="robots" content="all"/>
+    <meta name="revisit-after" content="1 Days"/>
+    <meta property="og:locale" content="iD"/>
+    <meta property="og:site_name" content="Baca-News"/>
+    <meta property="og:image" content="https://www.baca-news.com/uploads/logo/logo_6560c0afa3e97.png"/>
+    <meta property="og:image:width" content="180"/>
+    <meta property="og:image:height" content="50"/>
+    <meta property="og:type" content=website/>
+    <meta property="og:title" content="Home - Baca-News"/>
+    <meta property="og:description" content="Selamat datang di Baca-News, sumber informasi terkini melalui blog dan tutorial kami. Temukan berita teknologi terbaru, tips, dan tutorial yang membahas berbagai aspek dunia digital. Baca-News, panduan terkini untuk menggali dan memahami teknologi modern."/>
+    <meta property="og:url" content="https://www.baca-news.com/"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="Baca-News"/>
+    <meta name="twitter:title" content="Home - Baca-News"/>
+    <meta name="twitter:description" content="Selamat datang di Baca-News, sumber informasi terkini melalui blog dan tutorial kami. Temukan berita teknologi terbaru, tips, dan tutorial yang membahas berbagai aspek dunia digital. Baca-News, panduan terkini untuk menggali dan memahami teknologi modern."/>
+    <meta name="twitter:image" content="https://www.baca-news.com/uploads/logo/logo_6560c0afa3e97.png"/>
+    <link rel="canonical" href="https://www.baca-news.com/"/>
+    <link rel="alternate" hreflang="iD" href="https://www.baca-news.com/"/>
+    <link rel="shortcut icon" type="image/png" href="https://www.baca-news.com/uploads/logo/logo_65608e62994432.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Georgia&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.baca-news.com/assets/vendor/font-icons/css/icons.min.css"/>
+    <link rel="stylesheet" href="https://www.baca-news.com/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://www.baca-news.com/assets/vendor/slick/slick.min.css" rel="stylesheet"/>
+    <link href="https://www.baca-news.com/assets/css/magnific-popup.min.css" rel="stylesheet"/>
+    <link href="https://www.baca-news.com/assets/css/style-4.0.min.css" rel="stylesheet"/>
+    <link href="https://www.baca-news.com/assets/css/dark.min.css" rel="stylesheet"/>
+    <link href="https://www.baca-news.com/assets/css/colors/red.min.css" rel="stylesheet"/>
+    <style>body {Georgia}  .widget-title .title, .home-slider-item .title, .home-slider-boxed-item .title, .reactions .title-reactions, .poll .title, .w-popular-list li .title, .random-post-slider .item-info .title, .first-tmp-slider-item .item-info .title, .post-item-horizontal .title, .post-item .title, .footer-widget .title, .f-random-list li .title, .post-content .post-title .title, .related-posts .post-list li .title, .related-posts .related-post-title .title, .comment-tabs a, .page-title, .leave-reply-title, .post-item-boxed .title, .w-our-picks-list li .title, .gallery-category-title {font-family: "Source Sans Pro", Helvetica, sans-serif}  .post-item-horizontal .item-image {float: left;}  .post-item-horizontal .item-content {float: left;}.add-to-reading-list{padding: 0 !important}</style>    <style>
+.navbar-inverse {
+  color: #eee;
+  background-color: #bf0707;
+}
+.mobile-nav-container > .nav-mobile-header {
+  background-color: #ac0a0a !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+  padding: 24px 10px;
+  margin: 0;
+  border-radius: 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 26px;
+  background-color: #fff0f000 !important;
+  font-size: 14px;
+  position: relative;
+  color: #e6e6e6;
+}
+#loader {
+			align-items: center;
+			background-color: #090f1e;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: fixed;
+			text-align: center;
+			top: 0;
+			height: 100%;
+			width: 100vw;
+			min-height: 100vh;
+			min-width: 100vw;
+			z-index: 1000;
+		}
+
+		#loader.hidden {
+			display: none;
+		}
+
+		#loader.transparent {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#loader #loader-logo-container {
+			margin-bottom: 40px;
+			height: 80px;
+			width: 160px;
+			backface-visibility: hidden;
+		}
+
+		#loader .loader-spinner {
+			animation: spinner 0.75s infinite linear;
+			border: 3px solid #1863d1;
+			border-radius: 50%;
+			border-right-color: transparent;
+			border-top-color: transparent;
+			box-sizing: border-box;
+			height: 25px;
+			pointer-events: none;
+			width: 25px;
+		}
+
+</style> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Jquery -->
+    <script src="https://www.baca-news.com/assets/js/jquery-1.12.4.min.js"></script>
+    <script>var rtl = false;</script>
+</head>
+<body>
+<!-- header -->
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container nav-container">
+            <div class="navbar-header logo-cnt">
+                <a class="navbar-brand" href="https://www.baca-news.com/">
+                    <img src="https://www.baca-news.com/uploads/logo/logo_6560c0afa3e97.png" alt="logo">
+                </a>
+            </div>
+            <!--navigation-->
+<div class="nav-desktop">
+    <div class="collapse navbar-collapse navbar-left">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="https://www.baca-news.com/">
+                    Home                </a>
+            </li>
+                                            <li class="">
+                                    <a href="https://www.baca-news.com/apple">
+                                        Apple                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/gaming">
+                                        Gaming                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/android">
+                                        Android                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/game">
+                                        Game                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/iphone">
+                                        iPhone                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/technology">
+                                        Technology                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://www.baca-news.com/contact">
+                                        Contact                                    </a>
+                                </li>
+                            
+                    </ul>
+
+        <ul class="nav navbar-nav nav-right">
+                                                    <li class="nav-item-right">
+                <a href="#" data-toggle="modal-search" id="search_button" class="search-icon"><i class="icon-search"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="mobile-nav-container">
+            <div class="nav-mobile-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mobile-header-container">
+                <div class="mobile-menu-button">
+                    <a href="javascript:void(0)" class="btn-open-mobile-nav"><i class="icon-menu"></i></a>
+                </div>
+                <div class="mobile-logo">
+                    <a href="https://www.baca-news.com/"><img src="https://www.baca-news.com/uploads/logo/logo_6560c0afa3e971.png" alt="logo"></a>
+                </div>
+                <div class="mobile-button-buttons">
+                    <a href="javascript:void(0)" id="mobile_search_button" class="search-icon"><i class="icon-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="navMobile" class="nav-mobile">
+    <div class="nav-mobile-logo">
+        <a href="https://www.baca-news.com/"><img src="https://www.baca-news.com/uploads/logo/logo_6560c0afa3e97.png" alt="logo"></a>
+    </div>
+    <a href="javascript:void(0)" class="btn-close-mobile-nav"><i class="icon-close"></i></a>
+    <div class="nav-mobile-inner">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="https://www.baca-news.com/" class="nav-link">Home</a>
+                    </li>
+
+                                                        <li class="nav-item">
+                                        <a href="https://www.baca-news.com/apple" class="nav-link">
+                                            Apple                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/gaming" class="nav-link">
+                                            Gaming                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/android" class="nav-link">
+                                            Android                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/game" class="nav-link">
+                                            Game                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/iphone" class="nav-link">
+                                            iPhone                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/technology" class="nav-link">
+                                            Technology                                        </a>
+                                    </li>
+                                                                    <li class="nav-item">
+                                        <a href="https://www.baca-news.com/contact" class="nav-link">
+                                            Contact                                        </a>
+                                    </li>
+                                
+                                                                                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </nav><!--/nav-->
+    <!--search modal-->
+    <div class="modal-search">
+        <form action="https://www.baca-news.com/search" method="get" accept-charset="utf-8">
+        <div class="container">
+            <input type="text" name="q" class="form-control" maxlength="300" pattern=".*\S+.*"
+                   placeholder="Search..." required >
+            <i class="icon-close s-close"></i>
+        </div>
+        </form>    </div><!-- /.modal-search -->
+</header>
+<!-- /.header-->
+<div id="overlay_bg" class="overlay-bg"></div>
+<h1 class="title-index">Home</h1>
+
+
+<!-- Section: main -->
+<section id="main" class="margin-top-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <div class="content">
+                                            <div class="first-tmp-slider">
+                            <!--Show if enabled-->
+                            
+<div class="slider-container">
+	<div class="home-slider-boxed-container">
+		<div class="home-slider-boxed-fixer">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAGfAQMAAAA6RcVwAAAAA1BMVEVHcEyC+tLSAAAAAXRSTlMAQObYZgAAADxJREFUGBntwQENAAAAwiD7p34PBwwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4E2aAQABq8lSAgAAAABJRU5ErkJggg==" class="img-responsive" alt="img">
+		</div>
+		<div id="home-slider-boxed" class="home-slider-boxed">
+								<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/cara-update-ios-pada-perangkat-apple">
+									<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+		<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://www.baca-news.com/uploads/images/202311/image_750x415_654e2b72c9aa8.jpg" class="img-responsive img-slider img-external" alt="Cara Update iOS pada Perangkat apple">
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-update-ios-pada-perangkat-apple">
+							<a href="https://www.baca-news.com/apple">
+							<span class="label label-danger label-slider-category">
+								Apple							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/cara-update-ios-pada-perangkat-apple">
+									Cara Update iOS pada Perangkat apple								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 10, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                144    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/mengatasi-gta-v-lemot">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://cdn.mos.cms.futurecdn.net/HSvuNkZfrBWE6s3nPG7xZm-1200-80.jpg" class="img-responsive img-slider img-external" alt="Mengatasi GTA V Lemot ">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/mengatasi-gta-v-lemot">
+							<a href="https://www.baca-news.com/game">
+							<span class="label label-danger label-slider-category">
+								Game							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/mengatasi-gta-v-lemot">
+									Mengatasi GTA V Lemot 								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 11, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                112    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/cara-ubl-realme-10pro-100-hasil">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://image01.realme.net/general/20230110/1673340709023.png" class="img-responsive img-slider img-external" alt="Cara UBL Realme 10Pro 100% hasil">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-ubl-realme-10pro-100-hasil">
+							<a href="https://www.baca-news.com/android">
+							<span class="label label-danger label-slider-category">
+								Android							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/cara-ubl-realme-10pro-100-hasil">
+									Cara UBL Realme 10Pro 100% hasil								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 13, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                102    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/cara-root-hp-realme">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLa3TYzO_oHWR0q1z450XdYudyq75UsGVdA&usqp=CAU" class="img-responsive img-slider img-external" alt="Cara Root Hp Realme ">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-root-hp-realme">
+							<a href="https://www.baca-news.com/android">
+							<span class="label label-danger label-slider-category">
+								Android							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/cara-root-hp-realme">
+									Cara Root Hp Realme 								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 10, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                198    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/top-10-game-terlaris-di-tahun-2023">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://m.media-amazon.com/images/I/81-BHIfKSKL.jpg" class="img-responsive img-slider img-external" alt="Top 10 Game Terlaris Di Tahun 2023">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/top-10-game-terlaris-di-tahun-2023">
+							<a href="https://www.baca-news.com/gaming">
+							<span class="label label-danger label-slider-category">
+								Gaming							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/top-10-game-terlaris-di-tahun-2023">
+									Top 10 Game Terlaris Di Tahun 2023								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 11, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                130    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://imageio.forbes.com/specials-images/imageserve/6200b0dddcf32d3be937fa84/The-5-Technologies-That-Will-Change-The-Future-Of-The-Human-Race/960x0.jpg?height=399&width=711&fit=bounds" class="img-responsive img-slider img-external" alt="Teknologi Terkini yang Membuat Terpesona">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+							<a href="https://www.baca-news.com/technology">
+							<span class="label label-danger label-slider-category">
+								Technology							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+									Teknologi Terkini yang Membuat Terpesona								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 14, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                97    </span>
+            </p>
+</div>						</div>
+					</div>
+									<!-- slider item -->
+					<div class="home-slider-boxed-item">
+						<a href="https://www.baca-news.com/cara-membuat-website">
+									<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-lazy="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycBhWNK3otaMLxV3tosgxLBUAVIvHnyXaXA&usqp=CAU" class="img-responsive img-slider img-external" alt="Cara Membuat Website ">
+		</div>
+							</a>
+						<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-membuat-website">
+							<a href="https://www.baca-news.com/technology">
+							<span class="label label-danger label-slider-category">
+								Technology							</span>
+							</a>
+							<h2 class="title">
+								<a href="https://www.baca-news.com/cara-membuat-website">
+									Cara Membuat Website 								</a>
+							</h2>
+							<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                78    </span>
+            </p>
+</div>						</div>
+					</div>
+						</div>
+		<div id="home-slider-boxed-nav" class="slider-nav">
+			<button class="prev"><i class="icon-arrow-left"></i></button>
+			<button class="next"><i class="icon-arrow-right"></i></button>
+		</div>
+	</div>
+</div>
+                        </div>
+                                        <div class="col-xs-12 col-sm-12 posts ">
+                        <div class="row">
+                                <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/gaming">
+                <span class="label-post-category">
+					Gaming                </span>
+            </a>
+            <a href="https://www.baca-news.com/sparepart-pc-gaming-yang-wajib-di-beli">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="sparepart pc gaming yang wajib di beli">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://jualbelilaptop.id/wp-content/uploads/2020/08/Komponen-PC-Rakitan-untuk-Gaming-dan-Graphic-Design-1.jpg" alt="sparepart pc gaming yang wajib di beli" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/sparepart-pc-gaming-yang-wajib-di-beli">
+                    sparepart pc gaming yang wajib di beli                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 28, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                80    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/sparepart-pc-gaming-yang-wajib-di-beli" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-mengatasi-sql-injection-melindungi-website-dari-ancaman-keamanan-yang-serius">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman Keamanan yang Serius">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://itbox.id/wp-content/uploads/2023/05/How-does-SQLi-attack-works.png" alt="Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman Keamanan yang Serius" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-mengatasi-sql-injection-melindungi-website-dari-ancaman-keamanan-yang-serius">
+                    Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman...                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 28, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                147    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-mengatasi-sql-injection-melindungi-website-dari-ancaman-keamanan-yang-serius" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+        
+                            <section class="col-sm-12 bn-lg bn-list p-t-0">
+                    <div class="row">
+                        <script type="c1f104de73e684395be78bca-text/javascript">
+	atOptions = {
+		'key' : 'f1a22cb97c14e06433ddf6bf6ac5087a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.baca-news.com/uploads/gallery/invoke.js"></scr' + 'ipt>');
+</script>                    </div>
+                </section>
+            
+            
+        
+
+        
+    
+
+<!--Sidebar ad space
+
+-->
+                                    <div class="col-sm-12 col-xs-12"></div>
+                                    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-mengatasi-serangan-ddos-pada-website-pertahanan-yang-efektif-untuk-kelancaran-operasional">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Cara Mengatasi Serangan DDoS pada Website: Pertahanan yang Efektif untuk Kelancaran Operasional">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://dcloud.co.id/blog/wp-content/uploads/2023/07/DDoS-Featured-Image.jpg" alt="Cara Mengatasi Serangan DDoS pada Website: Pertahanan yang Efektif untuk Kelancaran Operasional" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-mengatasi-serangan-ddos-pada-website-pertahanan-yang-efektif-untuk-kelancaran-operasional">
+                    Cara Mengatasi Serangan DDoS pada Website: Pertahanan yang...                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 28, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                77    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-mengatasi-serangan-ddos-pada-website-pertahanan-yang-efektif-untuk-kelancaran-operasional" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/kegunaan-security-pada-website">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Kegunaan Security pada Website">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://d117h1jjiq768j.cloudfront.net/images/default-source/blogs/2023/2023-1/what-is-a-web-application-firewall-waf-and-why-do-you-need-one_1200x620.png?sfvrsn=5cfa7f8e_1" alt="Kegunaan Security pada Website" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/kegunaan-security-pada-website">
+                    Kegunaan Security pada Website                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 28, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                141    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/kegunaan-security-pada-website" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+                                    <div class="col-sm-12 col-xs-12"></div>
+                                    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/android">
+                <span class="label-post-category">
+					Android                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-mengatasi-hp-kena-virus">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="cara mengatasi hp kena virus">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://images.tokopedia.net/blog-tokopedia-com/uploads/2017/11/virus-1.jpg" alt="cara mengatasi hp kena virus" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-mengatasi-hp-kena-virus">
+                    cara mengatasi hp kena virus                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                78    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-mengatasi-hp-kena-virus" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-mengatasi-website-403">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="cara mengatasi website 403">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://miro.medium.com/v2/resize:fit:1358/1*MIrLuyiCDpdNbnFYxYlKtA.png" alt="cara mengatasi website 403" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-mengatasi-website-403">
+                    cara mengatasi website 403                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                74    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-mengatasi-website-403" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+                                    <div class="col-sm-12 col-xs-12"></div>
+                                    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-menggunakan-cloudflare">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Cara Menggunakan Cloudflare">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://secutec.eu/wp-content/uploads/2021/09/cloudflare2.jpg" alt="Cara Menggunakan Cloudflare" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-menggunakan-cloudflare">
+                    Cara Menggunakan Cloudflare                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                175    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-menggunakan-cloudflare" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-membuat-website">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Cara Membuat Website ">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycBhWNK3otaMLxV3tosgxLBUAVIvHnyXaXA&usqp=CAU" alt="Cara Membuat Website " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-membuat-website">
+                    Cara Membuat Website                 </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                78    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-membuat-website" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+                                    <div class="col-sm-12 col-xs-12"></div>
+                                    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/gaming">
+                <span class="label-post-category">
+					Gaming                </span>
+            </a>
+            <a href="https://www.baca-news.com/cheat-stumble">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="cheat stumble">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://blogger.googleusercontent.com/img/a/AVvXsEgEn_cmLR5uKJUzkXHVcU26RaISS5YPAUsuxTbwIOZ3IuoYddlJC5QWUtCY_3WDnsivaBNHzN0kWa_ACazZF4fqkEnpeglbJc9c_jHk9jWSMyW4mViRrVs5FYUaDp_NTUrbp3hAaiDSmipBzapdSc0cavkoqI8HKUb0tZPdKEUnZRRfZO3nRrmdnFww=w640-h366" alt="cheat stumble" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cheat-stumble">
+                    cheat stumble                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 16, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                93    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cheat-stumble" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/gaming">
+                <span class="label-post-category">
+					Gaming                </span>
+            </a>
+            <a href="https://www.baca-news.com/cara-download-game-di-steam">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Cara Download Game di Steam">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q6ps9MC7RxYfMdk4QWPf4mEABH802_Jr4Thr7WK14gE4dXYzbAj_xNjka5qrq1X5KTk&usqp=CAU" alt="Cara Download Game di Steam" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/cara-download-game-di-steam">
+                    Cara Download Game di Steam                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 14, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                145    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/cara-download-game-di-steam" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+                                    <div class="col-sm-12 col-xs-12"></div>
+                                    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Teknologi Terkini yang Membuat Terpesona">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://imageio.forbes.com/specials-images/imageserve/6200b0dddcf32d3be937fa84/The-5-Technologies-That-Will-Change-The-Future-Of-The-Human-Race/960x0.jpg?height=399&width=711&fit=bounds" alt="Teknologi Terkini yang Membuat Terpesona" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+                    Teknologi Terkini yang Membuat Terpesona                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 14, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                97    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Post list item-->
+    <div class="post-item-horizontal">
+        <div class="item-image">
+            <a href="https://www.baca-news.com/technology">
+                <span class="label-post-category">
+					Technology                </span>
+            </a>
+            <a href="https://www.baca-news.com/exploring-topics-that-captivate-readers">
+                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="Exploring Topics That Captivate Readers">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-src="https://www.javaassignmenthelp.com/blog/wp-content/uploads/2023/07/Controversial-Argumentative-Essay-Topics.jpg" alt="Exploring Topics That Captivate Readers" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_slider.png'>
+		</div>
+	            </a>
+        </div>
+        <div class="item-content">
+            <h3 class="title">
+                <a href="https://www.baca-news.com/exploring-topics-that-captivate-readers">
+                    Exploring Topics That Captivate Readers                </a>
+            </h3>
+            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 13, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                98    </span>
+            </p>
+</div>            <p class="summary">
+                            </p>
+            <div class="post-buttons">
+                <a href="https://www.baca-news.com/exploring-topics-that-captivate-readers" class="pull-right read-more">
+                    Read More                    <i class="icon-arrow-right read-more-i" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            
+
+    
+    
+        
+            
+            
+        
+
+        
+    
+
+<!--Sidebar ad space
+
+-->
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <ul class='pagination'><li class='disabled'><li class='active page-num'><a href='#'>1<span class='sr-only'></span></a></li><li class="page-num"><a href="https://www.baca-news.com/?page=2" data-ci-pagination-page="2">2</a></li><li class="page-num"><a href="https://www.baca-news.com/?page=3" data-ci-pagination-page="3">3</a></li><li class='next'><a href="https://www.baca-news.com/?page=2" data-ci-pagination-page="2" rel="next">&rsaquo;</a></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                
+<div class="sidebar">
+
+    
+
+    
+    
+        
+            
+        
+
+        
+    
+
+<!--Sidebar ad space
+
+-->
+
+    <div class="col-sm-12 col-xs-12 sidebar-widget widget-popular-posts">
+        <div class="row">
+            <!--Include popular posts partial-->
+            
+<!--Partial: Popular Posts-->
+<div class="widget-title widget-popular-posts-title">
+    <h4 class="title">Popular Posts</h4>
+</div>
+
+<div class="col-sm-12 widget-body">
+    <div class="row">
+        <ul class="widget-list w-popular-list">
+
+            <!--List  popular posts-->
+                                <li>
+                        <div class="left">
+                            <a href="https://www.baca-news.com/10-website-ai-paling-populer-di-2023">
+                                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="10 Website AI Paling Populer di 2023">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://images.bisnis.com/posts/2023/06/03/1661805/ilustrasi_ai.jpg" alt="10 Website AI Paling Populer di 2023" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                            </a>
+                        </div>
+                        <div class="right">
+                            <h3 class="title">
+                                <a href="https://www.baca-news.com/10-website-ai-paling-populer-di-2023">
+                                    10 Website AI Paling Populer di 2023                                </a>
+                            </h3>
+                            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 12, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                220    </span>
+            </p>
+</div>                        </div>
+                    </li>
+                                    <li>
+                        <div class="left">
+                            <a href="https://www.baca-news.com/cara-root-hp-realme">
+                                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Root Hp Realme ">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLa3TYzO_oHWR0q1z450XdYudyq75UsGVdA&usqp=CAU" alt="Cara Root Hp Realme " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                            </a>
+                        </div>
+                        <div class="right">
+                            <h3 class="title">
+                                <a href="https://www.baca-news.com/cara-root-hp-realme">
+                                    Cara Root Hp Realme                                 </a>
+                            </h3>
+                            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 10, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                198    </span>
+            </p>
+</div>                        </div>
+                    </li>
+                                    <li>
+                        <div class="left">
+                            <a href="https://www.baca-news.com/cara-menggunakan-cloudflare">
+                                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Menggunakan Cloudflare">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://secutec.eu/wp-content/uploads/2021/09/cloudflare2.jpg" alt="Cara Menggunakan Cloudflare" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                            </a>
+                        </div>
+                        <div class="right">
+                            <h3 class="title">
+                                <a href="https://www.baca-news.com/cara-menggunakan-cloudflare">
+                                    Cara Menggunakan Cloudflare                                </a>
+                            </h3>
+                            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                175    </span>
+            </p>
+</div>                        </div>
+                    </li>
+                                    <li>
+                        <div class="left">
+                            <a href="https://www.baca-news.com/cara-mengatasi-sql-injection-melindungi-website-dari-ancaman-keamanan-yang-serius">
+                                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman Keamanan yang Serius">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://itbox.id/wp-content/uploads/2023/05/How-does-SQLi-attack-works.png" alt="Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman Keamanan yang Serius" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                            </a>
+                        </div>
+                        <div class="right">
+                            <h3 class="title">
+                                <a href="https://www.baca-news.com/cara-mengatasi-sql-injection-melindungi-website-dari-ancaman-keamanan-yang-serius">
+                                    Cara Mengatasi SQL Injection: Melindungi Website dari Ancaman...                                </a>
+                            </h3>
+                            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 28, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                147    </span>
+            </p>
+</div>                        </div>
+                    </li>
+                                    <li>
+                        <div class="left">
+                            <a href="https://www.baca-news.com/cara-download-game-di-steam">
+                                		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Download Game di Steam">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q6ps9MC7RxYfMdk4QWPf4mEABH802_Jr4Thr7WK14gE4dXYzbAj_xNjka5qrq1X5KTk&usqp=CAU" alt="Cara Download Game di Steam" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                            </a>
+                        </div>
+                        <div class="right">
+                            <h3 class="title">
+                                <a href="https://www.baca-news.com/cara-download-game-di-steam">
+                                    Cara Download Game di Steam                                </a>
+                            </h3>
+                            <div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 14, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                145    </span>
+            </p>
+</div>                        </div>
+                    </li>
+                        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+
+            <div class="col-sm-12 col-xs-12 sidebar-widget">
+            <div class="row">
+                <!--Include our picks partial-->
+                
+<!--Partial: Popular Posts-->
+<div class="widget-title widget-popular-posts-title">
+	<h4 class="title">Our Picks</h4>
+</div>
+
+<div class="col-sm-12 widget-body">
+	<div class="row">
+		<ul class="widget-list w-our-picks-list">
+
+			<!--List  popular posts-->
+								<li>
+						<div class="post-image">
+							<a href="https://www.baca-news.com/technology">
+                            <span class="label-post-category">
+                                Technology                            </span>
+							</a>
+							<a href="https://www.baca-news.com/cara-membuat-website">
+										<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="Cara Membuat Website ">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycBhWNK3otaMLxV3tosgxLBUAVIvHnyXaXA&usqp=CAU" alt="Cara Membuat Website " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_mid.png'>
+		</div>
+								</a>
+						</div>
+
+						<h3 class="title">
+							<a href="https://www.baca-news.com/cara-membuat-website">
+								Cara Membuat Website 							</a>
+						</h3>
+						<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 25, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                78    </span>
+            </p>
+</div>
+					</li>
+									<li>
+						<div class="post-image">
+							<a href="https://www.baca-news.com/technology">
+                            <span class="label-post-category">
+                                Technology                            </span>
+							</a>
+							<a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+										<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="Teknologi Terkini yang Membuat Terpesona">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-src="https://imageio.forbes.com/specials-images/imageserve/6200b0dddcf32d3be937fa84/The-5-Technologies-That-Will-Change-The-Future-Of-The-Human-Race/960x0.jpg?height=399&width=711&fit=bounds" alt="Teknologi Terkini yang Membuat Terpesona" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_mid.png'>
+		</div>
+								</a>
+						</div>
+
+						<h3 class="title">
+							<a href="https://www.baca-news.com/teknologi-terkini-yang-membuat-terpesona">
+								Teknologi Terkini yang Membuat Terpesona							</a>
+						</h3>
+						<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 14, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                97    </span>
+            </p>
+</div>
+					</li>
+									<li>
+						<div class="post-image">
+							<a href="https://www.baca-news.com/android">
+                            <span class="label-post-category">
+                                Android                            </span>
+							</a>
+							<a href="https://www.baca-news.com/cara-ubl-realme-10pro-100-hasil">
+										<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="Cara UBL Realme 10Pro 100% hasil">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-src="https://image01.realme.net/general/20230110/1673340709023.png" alt="Cara UBL Realme 10Pro 100% hasil" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_mid.png'>
+		</div>
+								</a>
+						</div>
+
+						<h3 class="title">
+							<a href="https://www.baca-news.com/cara-ubl-realme-10pro-100-hasil">
+								Cara UBL Realme 10Pro 100% hasil							</a>
+						</h3>
+						<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 13, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                102    </span>
+            </p>
+</div>
+					</li>
+									<li>
+						<div class="post-image">
+							<a href="https://www.baca-news.com/gaming">
+                            <span class="label-post-category">
+                                Gaming                            </span>
+							</a>
+							<a href="https://www.baca-news.com/top-10-game-terlaris-di-tahun-2023">
+										<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="Top 10 Game Terlaris Di Tahun 2023">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-src="https://m.media-amazon.com/images/I/81-BHIfKSKL.jpg" alt="Top 10 Game Terlaris Di Tahun 2023" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_mid.png'>
+		</div>
+								</a>
+						</div>
+
+						<h3 class="title">
+							<a href="https://www.baca-news.com/top-10-game-terlaris-di-tahun-2023">
+								Top 10 Game Terlaris Di Tahun 2023							</a>
+						</h3>
+						<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 11, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                130    </span>
+            </p>
+</div>
+					</li>
+									<li>
+						<div class="post-image">
+							<a href="https://www.baca-news.com/game">
+                            <span class="label-post-category">
+                                Game                            </span>
+							</a>
+							<a href="https://www.baca-news.com/mengatasi-gta-v-lemot">
+										<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_mid.png" class="img-responsive" alt="Mengatasi GTA V Lemot ">
+			<img src="https://www.baca-news.com/assets/img/bg_mid.png" data-src="https://cdn.mos.cms.futurecdn.net/HSvuNkZfrBWE6s3nPG7xZm-1200-80.jpg" alt="Mengatasi GTA V Lemot " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_mid.png'>
+		</div>
+								</a>
+						</div>
+
+						<h3 class="title">
+							<a href="https://www.baca-news.com/mengatasi-gta-v-lemot">
+								Mengatasi GTA V Lemot 							</a>
+						</h3>
+						<div class="post-meta">
+    <p class="post-meta-inner">
+    <span>
+        <a href="https://www.baca-news.com/profile/admin">
+        admin        </a>
+    </span>
+        <span>
+        <i class="icon-clock"></i>&nbsp;&nbsp;Nov 11, 2023    </span>
+                    <span>
+        <i class="icon-comment"></i>&nbsp;
+                0    </span>
+                <!--Show if enabled-->
+                    <span>
+        <i class="icon-eye"></i>&nbsp;
+                112    </span>
+            </p>
+</div>
+					</li>
+				
+		</ul>
+	</div>
+</div>
+            </div>
+        </div>
+    
+    <div class="col-sm-12 col-xs-12 sidebar-widget">
+        <div class="row">
+            <!--Include categories partial-->
+            
+<!--Partial: Categories-->
+<div class="widget-title">
+	<h4 class="title">Categories</h4>
+</div>
+<div class="col-sm-12 widget-body">
+	<div class="row">
+		<ul class="widget-list w-category-list">
+			<!--List all categories-->
+							<li>
+					<a href="https://www.baca-news.com/apple">Apple</a><span>(2)</span>
+				</li>
+								
+							<li>
+					<a href="https://www.baca-news.com/gaming">Gaming</a><span>(6)</span>
+				</li>
+								
+							<li>
+					<a href="https://www.baca-news.com/android">Android</a><span>(4)</span>
+				</li>
+								
+							<li>
+					<a href="https://www.baca-news.com/game">Game</a><span>(2)</span>
+				</li>
+								
+							<li>
+					<a href="https://www.baca-news.com/iphone">iPhone</a><span>(2)</span>
+				</li>
+								
+							<li>
+					<a href="https://www.baca-news.com/technology">Technology</a><span>(12)</span>
+				</li>
+								
+					</ul>
+	</div>
+</div>
+        </div>
+    </div>
+
+    
+
+    
+    
+        
+            
+        
+
+        
+    
+
+<!--Sidebar ad space
+
+-->
+
+    <div class="col-sm-12 col-xs-12 sidebar-widget">
+        <div class="row">
+            <!--Include random slider partial-->
+            
+<div class="widget-title">
+	<h4 class="title">Random Posts</h4>
+</div>
+<div class="col-sm-12 widget-body">
+	<div class="row">
+        		<div class="slider-container">
+			<div class="random-slider-fixer">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAAGxAQMAAADf7wU8AAAAA1BMVEVHcEyC+tLSAAAAAXRSTlMAQObYZgAAADlJREFUGBntwTEBAAAAwiD7p14JT2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFOMYwAB7fFpjAAAAABJRU5ErkJggg==" alt="img">
+			</div>
+			<div class="random-slider-container">
+				<div id="random-slider" class="random-slider">
+													<!-- slider item -->
+								<div class="home-slider-boxed-item">
+									<a href="https://www.baca-news.com/cara-menjaga-kinerja-pc-agar-tidak-lemot">
+												<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-lazy="https://cdn-brilio-net.akamaized.net/news/2022/05/27/230288/1755001-1000xauto-meme-komputer-lemot.jpg" class="img-responsive img-slider img-external" alt="cara menjaga kinerja PC agar tidak lemot.">
+		</div>
+										</a>
+									<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-menjaga-kinerja-pc-agar-tidak-lemot">
+										<a href="https://www.baca-news.com/gaming">
+										<span class="label label-danger label-slider-category">
+											Gaming										</span>
+										</a>
+										<h3 class="title">
+											<a href="https://www.baca-news.com/cara-menjaga-kinerja-pc-agar-tidak-lemot">
+												cara menjaga kinerja PC agar tidak lemot.											</a>
+										</h3>
+									</div>
+								</div>
+															<!-- slider item -->
+								<div class="home-slider-boxed-item">
+									<a href="https://www.baca-news.com/cara-membuat-website">
+												<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-lazy="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycBhWNK3otaMLxV3tosgxLBUAVIvHnyXaXA&usqp=CAU" class="img-responsive img-slider img-external" alt="Cara Membuat Website ">
+		</div>
+										</a>
+									<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-membuat-website">
+										<a href="https://www.baca-news.com/technology">
+										<span class="label label-danger label-slider-category">
+											Technology										</span>
+										</a>
+										<h3 class="title">
+											<a href="https://www.baca-news.com/cara-membuat-website">
+												Cara Membuat Website 											</a>
+										</h3>
+									</div>
+								</div>
+															<!-- slider item -->
+								<div class="home-slider-boxed-item">
+									<a href="https://www.baca-news.com/10-website-ai-paling-populer-di-2023">
+												<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-lazy="https://images.bisnis.com/posts/2023/06/03/1661805/ilustrasi_ai.jpg" class="img-responsive img-slider img-external" alt="10 Website AI Paling Populer di 2023">
+		</div>
+										</a>
+									<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/10-website-ai-paling-populer-di-2023">
+										<a href="https://www.baca-news.com/technology">
+										<span class="label label-danger label-slider-category">
+											Technology										</span>
+										</a>
+										<h3 class="title">
+											<a href="https://www.baca-news.com/10-website-ai-paling-populer-di-2023">
+												10 Website AI Paling Populer di 2023											</a>
+										</h3>
+									</div>
+								</div>
+															<!-- slider item -->
+								<div class="home-slider-boxed-item">
+									<a href="https://www.baca-news.com/cheat-stumble">
+												<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-lazy="https://blogger.googleusercontent.com/img/a/AVvXsEgEn_cmLR5uKJUzkXHVcU26RaISS5YPAUsuxTbwIOZ3IuoYddlJC5QWUtCY_3WDnsivaBNHzN0kWa_ACazZF4fqkEnpeglbJc9c_jHk9jWSMyW4mViRrVs5FYUaDp_NTUrbp3hAaiDSmipBzapdSc0cavkoqI8HKUb0tZPdKEUnZRRfZO3nRrmdnFww=w640-h366" class="img-responsive img-slider img-external" alt="cheat stumble">
+		</div>
+										</a>
+									<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cheat-stumble">
+										<a href="https://www.baca-news.com/gaming">
+										<span class="label label-danger label-slider-category">
+											Gaming										</span>
+										</a>
+										<h3 class="title">
+											<a href="https://www.baca-news.com/cheat-stumble">
+												cheat stumble											</a>
+										</h3>
+									</div>
+								</div>
+															<!-- slider item -->
+								<div class="home-slider-boxed-item">
+									<a href="https://www.baca-news.com/cara-agar-website-cepat-terindex-optimalkan-seo-anda">
+												<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_slider.png" class="img-responsive" alt="fixer">
+			<img src="https://www.baca-news.com/assets/img/bg_slider.png" data-lazy="https://searchengineland.com/wp-content/seloads/2021/01/google-news-performance-report.jpg" class="img-responsive img-slider img-external" alt="Cara Agar Website Cepat Terindex: Optimalkan SEO Anda">
+		</div>
+										</a>
+									<div class="item-info redirect-onclik" data-url="https://www.baca-news.com/cara-agar-website-cepat-terindex-optimalkan-seo-anda">
+										<a href="https://www.baca-news.com/technology">
+										<span class="label label-danger label-slider-category">
+											Technology										</span>
+										</a>
+										<h3 class="title">
+											<a href="https://www.baca-news.com/cara-agar-website-cepat-terindex-optimalkan-seo-anda">
+												Cara Agar Website Cepat Terindex: Optimalkan SEO Anda											</a>
+										</h3>
+									</div>
+								</div>
+											</div>
+				<div id="random-slider-nav" class="slider-nav random-slider-nav">
+					<button class="prev"><i class="icon-arrow-left"></i></button>
+					<button class="next"><i class="icon-arrow-right"></i></button>
+				</div>
+			</div>
+		</div>
+        	</div>
+</div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xs-12 sidebar-widget">
+        <div class="row">
+            <!--Include tags partial-->
+            
+<!--Partial: Tags-->
+<div class="widget-title">
+    <h4 class="title">Tags</h4>
+</div>
+<div class="col-sm-12 widget-body">
+    <div class="row">
+        <ul class="widget-list w-tag-list">
+            <!--List  tags-->
+                    </ul>
+    </div>
+</div>        </div>
+    </div>
+    <div class="col-sm-12 col-xs-12 sidebar-widget">
+        <div class="row">
+            <!--Include Widget Comments-->
+                    </div>
+    </div>
+
+</div><!--/Sidebar-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <div class="row footer-widgets">
+            <!-- footer widget about-->
+            <div class="col-sm-4 col-xs-12">
+                <div class="footer-widget f-widget-about">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <h4 class="title">About</h4>
+                            <div class="title-line"></div>
+                            <p>
+                                Baca-News adalah sumber utama untuk informasi terkini tentang teknologi, game, dan inovasi. Kami menyajikan berita, tutorial, dan ulasan terkait teknologi modern. Dapatkan panduan lengkap dari komunitas kami, serta tips dan trik yang membantu Anda tetap terhubung dengan dunia digital. Jelajahi Baca-News, di mana pengetahuan bertemu teknologi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+
+            <!-- footer widget random posts-->
+            <div class="col-sm-4 col-xs-12">
+                <!--Include footer random posts partial-->
+                
+<!--Partial: Footer Random Posts-->
+<div class="footer-widget f-widget-random">
+    <div class="col-sm-12">
+        <div class="row">
+            <h4 class="title">Random Posts</h4>
+            <div class="title-line"></div>
+            <ul class="f-random-list">
+
+                <!--List random posts-->
+                                            <li>
+                                <div class="left">
+                                    <a href="https://www.baca-news.com/cara-mudah-rakit-pc-gaming">
+                                        		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Mudah Rakit PC Gaming ">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://media.kingston.com/kingston/articles/kfury-articles-gaming-what-is-microsoft-directstorage-thumbnail-md.jpg" alt="Cara Mudah Rakit PC Gaming " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                                    </a>
+                                </div>
+                                <div class="right">
+                                    <h5 class="title">
+                                        <a href="https://www.baca-news.com/cara-mudah-rakit-pc-gaming">
+                                            Cara Mudah Rakit PC Gaming                                         </a>
+                                    </h5>
+                                </div>
+                            </li>
+                                                    <li>
+                                <div class="left">
+                                    <a href="https://www.baca-news.com/cara-root-hp-realme">
+                                        		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Cara Root Hp Realme ">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLa3TYzO_oHWR0q1z450XdYudyq75UsGVdA&usqp=CAU" alt="Cara Root Hp Realme " class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                                    </a>
+                                </div>
+                                <div class="right">
+                                    <h5 class="title">
+                                        <a href="https://www.baca-news.com/cara-root-hp-realme">
+                                            Cara Root Hp Realme                                         </a>
+                                    </h5>
+                                </div>
+                            </li>
+                                                    <li>
+                                <div class="left">
+                                    <a href="https://www.baca-news.com/panduan-lengkap-bermain-garrys-mod-prop-hunt-menjadi-ahli-dalam-menyamar-dan-menyergap">
+                                        		<div class="external-image-container">
+						<img src="https://www.baca-news.com/assets/img/bg_small.png" class="img-responsive" alt="Panduan Lengkap Bermain Garry&#039;s Mod Prop Hunt: Menjadi Ahli dalam Menyamar dan Menyergap">
+			<img src="https://www.baca-news.com/assets/img/bg_small.png" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYTd1cumL-wJxg7O-aXUD4W4RtP1bgNGUZg&usqp=CAU" alt="Panduan Lengkap Bermain Garry&#039;s Mod Prop Hunt: Menjadi Ahli dalam Menyamar dan Menyergap" class="lazyload img-external" onerror='https://www.baca-news.com/assets/img/bg_small.png'>
+		</div>
+	                                    </a>
+                                </div>
+                                <div class="right">
+                                    <h5 class="title">
+                                        <a href="https://www.baca-news.com/panduan-lengkap-bermain-garrys-mod-prop-hunt-menjadi-ahli-dalam-menyamar-dan-menyergap">
+                                            Panduan Lengkap Bermain Garry&#039;s Mod Prop Hunt: Menjadi...                                        </a>
+                                    </h5>
+                                </div>
+                            </li>
+                        
+            </ul>
+        </div>
+    </div>
+</div>
+            </div><!-- /.col-sm-4 -->
+
+            <!-- footer widget follow us-->
+            <div class="col-sm-4 col-xs-12">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="footer-widget f-widget-follow">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <h4 class="title">Social Media</h4>
+                                    <div class="title-line"></div>
+                                    <ul>
+                                        
+    <li>
+        <a class="facebook" href="https://web.facebook.com/souw.sun"
+           target="_blank"><i class="icon-facebook"></i></a>
+    </li>
+    <li>
+        <a class="telegram" href="https://t.me/iFappleRam"
+           target="_blank"><i class="icon-telegram"></i></a>
+    </li>
+    <li>
+        <a class="rss" href="https://www.baca-news.com/rss-feeds"><i class="icon-rss"></i></a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- newsletter -->
+                <div class="col-sm-12">
+                    <div class="row">
+                        <p>Subscribe here to get interesting stuff and updates!</p>
+                        <form action="https://www.baca-news.com/home_controller/add_to_newsletter" method="post" accept-charset="utf-8">
+          <input type="hidden" name="infinite_csrf_token" value="6b4c34d3eaa41ce443a257824e003eee" />
+                        <div class="newsletter">
+                            <div class="left">
+                                <input type="email" name="email" id="newsletter_email" maxlength="199" placeholder="Email" required >
+                            </div>
+                            <div class="right">
+                                <button type="submit" class="newsletter-button">Subscribe</button>
+                            </div>
+                        </div>
+                        </form>                    </div>
+                    <div class="row">
+                        <p id="newsletter">
+                                                    </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="languages-dropdown">
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .col-md-3 -->
+        </div>
+        <!-- .row -->
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom-left">
+                        <p>Copyright 2023 Baca-News - All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <ul class="nav-footer">
+                                                                    <li>
+                                            <a href="https://www.baca-news.com/terms-conditions">Terms &amp; Conditions </a>
+                                        </li>
+                                                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer Section -->
+<!-- Scroll Up Link -->
+<a href="#" class="scrollup"><i class="icon-arrow-up"></i></a>
+
+<script>var sys_lang_id = '2';$('<input>').attr({type: 'hidden', name: 'sys_lang_id', value: sys_lang_id}).appendTo('form');var csfr_token_name = 'infinite_csrf_token';var csfr_cookie_name = 'infinite_csrf_cookie';var base_url = 'https://www.baca-news.com/';var is_recaptcha_enabled = false;</script>
+<script src="https://www.baca-news.com/assets/vendor/slick/slick.min.js"></script>
+<script src="https://www.baca-news.com/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.baca-news.com/assets/js/plugins.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#home-slider").slick({
+      autoplay: true,
+      autoplaySpeed: 4900,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 200,
+      rtl: rtl,
+      swipeToSlide: true,
+      lazyLoad: "progressive",
+      prevArrow: $("#home-slider-nav .prev"),
+      nextArrow: $("#home-slider-nav .next"),
+      responsive: [
+        { breakpoint: 2000, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+        { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+        { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      ],
+    });
+    $("#home-slider-boxed").slick({
+      autoplay: true,
+      autoplaySpeed: 4900,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 200,
+      rtl: rtl,
+      swipeToSlide: true,
+      lazyLoad: "progressive",
+      prevArrow: $("#home-slider-boxed-nav .prev"),
+      nextArrow: $("#home-slider-boxed-nav .next"),
+    });
+    $("#random-slider").slick({
+      autoplay: true,
+      autoplaySpeed: 4900,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 200,
+      rtl: rtl,
+      lazyLoad: "progressive",
+      prevArrow: $("#random-slider-nav .prev"),
+      nextArrow: $("#random-slider-nav .next"),
+    });
+    $("#post-details-slider").slick({
+      autoplay: false,
+      autoplaySpeed: 4900,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      speed: 200,
+      rtl: rtl,
+      adaptiveHeight: true,
+      lazyLoad: "progressive",
+      prevArrow: $("#post-details-slider-nav .prev"),
+      nextArrow: $("#post-details-slider-nav .next"),
+    });
+  });
+  $(window).load(function () {
+    $("#post-details-slider").css("opacity", "1");
+  });
+  $(document).on("click", ".redirect-onclik", function () {
+    var a = $(this).attr("data-url");
+    window.location.href = a;
+  });
+  $("form").submit(function () {
+    $("input[name='" + csfr_token_name + "']").val($.cookie(csfr_cookie_name));
+  });
+  $(document).on("click", ".btn-open-mobile-nav", function () {
+    document.getElementById("navMobile").style.width = "280px";
+    $("#overlay_bg").show();
+  });
+  $(document).on("click", ".btn-close-mobile-nav", function () {
+    document.getElementById("navMobile").style.width = "0";
+    $("#overlay_bg").hide();
+  });
+  $(document).on("click", "#overlay_bg", function () {
+    document.getElementById("navMobile").style.width = "0";
+    $("#overlay_bg").hide();
+  });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scrollup").fadeIn();
+    } else {
+      $(".scrollup").fadeOut();
+    }
+  });
+  $(".scrollup").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 700);
+    return false;
+  });
+  $("[data-toggle='modal-search']").click(function () {
+    $("body").toggleClass("search-open");
+    return false;
+  });
+  $(".modal-search .s-close").click(function () {
+    $("body").removeClass("search-open");
+    return false;
+  });
+  $(document).on("click", "#search_button", function () {
+    $("body").toggleClass("search-open");
+  });
+  $(document).on("click", "#mobile_search_button", function () {
+    $("body").toggleClass("search-open");
+  });
+  $(document).on("click", ".modal-search .s-close", function () {
+    $("body").removeClass("search-open");
+  });
+  $(document).ready(function () {
+    $("#home-slider").hover(
+      function () {
+        $("#home-slider .owl-nav").css({ display: "block" });
+      },
+      function () {
+        $("#home-slider .owl-nav").css({ display: "none" });
+      }
+    );
+    $("#first-tmp-home-slider").hover(
+      function () {
+        $("#first-tmp-home-slider .owl-nav").css({ display: "block" });
+      },
+      function () {
+        $("#first-tmp-home-slider .owl-nav").css({ display: "none" });
+      }
+    );
+  });
+  $(document).ready(function () {
+    $("iframe").attr("allowfullscreen", "");
+  });
+  function add_reaction(b, c) {
+    var a = { post_id: b, reaction: c, sys_lang_id: sys_lang_id };
+    a[csfr_token_name] = $.cookie(csfr_cookie_name);
+    $.ajax({
+      method: "POST",
+      url: base_url + "home_controller/save_reaction",
+      data: a,
+    }).done(function (d) {
+      document.getElementById("reactions_result").innerHTML = d;
+    });
+  }
+  function view_poll_results(b) {
+    $("#poll_" + b + " .question").hide();
+    $("#poll_" + b + " .result").show();
+  }
+  function view_poll_options(b) {
+    $("#poll_" + b + " .result").hide();
+    $("#poll_" + b + " .question").show();
+  }
+  $(document).ready(function () {
+    var b;
+    $(".poll-form").submit(function (h) {
+      h.preventDefault();
+      if (b) {
+        b.abort();
+      }
+      var a = $(this);
+      var g = a.find("input, select, button, textarea");
+      var j = a.serializeArray();
+      j.push({ name: csfr_token_name, value: $.cookie(csfr_cookie_name) });
+      var i = $(this).attr("data-form-id");
+      b = $.ajax({
+        url: base_url + "home_controller/add_vote",
+        type: "post",
+        data: j,
+      });
+      b.done(function (c) {
+        g.prop("disabled", false);
+        if (c == "required") {
+          $("#poll-required-message-" + i).show();
+          $("#poll-error-message-" + i).hide();
+        } else {
+          if (c == "voted") {
+            $("#poll-error-message-" + i).show();
+            $("#poll-required-message-" + i).hide();
+          } else {
+            document.getElementById("poll-results-" + i).innerHTML = c;
+            $("#poll_" + i + " .result").show();
+            $("#poll_" + i + " .question").hide();
+          }
+        }
+      });
+    });
+  });
+  $(document).ready(function () {
+    $("#make_comment_registered").submit(function (b) {
+      b.preventDefault();
+      var c = $(this).serializeArray();
+      var a = {};
+      var d = true;
+      $(c).each(function (f, e) {
+        if ($.trim(e.value).length < 1) {
+          $("#make_comment_registered [name='" + e.name + "']").addClass(
+            "is-invalid"
+          );
+          d = false;
+        } else {
+          $("#make_comment_registered [name='" + e.name + "']").removeClass(
+            "is-invalid"
+          );
+          a[e.name] = e.value;
+        }
+      });
+      a.limit = $("#post_comment_limit").val();
+      a.sys_lang_id = sys_lang_id;
+      a[csfr_token_name] = $.cookie(csfr_cookie_name);
+      if (d == true) {
+        $.ajax({
+          type: "POST",
+          url: base_url + "home_controller/add_comment_post",
+          data: a,
+          success: function (f) {
+            var e = JSON.parse(f);
+            if (e.type == "message") {
+              document.getElementById("message-comment-result").innerHTML =
+                e.message;
+            } else {
+              document.getElementById("comment-result").innerHTML = e.message;
+            }
+            $("#make_comment_registered")[0].reset();
+          },
+        });
+      }
+    });
+    $("#make_comment").submit(function (b) {
+      b.preventDefault();
+      var c = $(this).serializeArray();
+      var a = {};
+      var d = true;
+      $(c).each(function (f, e) {
+        if ($.trim(e.value).length < 1) {
+          $("#make_comment [name='" + e.name + "']").addClass("is-invalid");
+          d = false;
+        } else {
+          $("#make_comment [name='" + e.name + "']").removeClass("is-invalid");
+          a[e.name] = e.value;
+        }
+      });
+      a.limit = $("#post_comment_limit").val();
+      a.sys_lang_id = sys_lang_id;
+      a[csfr_token_name] = $.cookie(csfr_cookie_name);
+      if (is_recaptcha_enabled == true) {
+        if (typeof a["g-recaptcha-response"] === "undefined") {
+          $(".g-recaptcha").addClass("is-recaptcha-invalid");
+          d = false;
+        } else {
+          $(".g-recaptcha").removeClass("is-recaptcha-invalid");
+        }
+      }
+      if (d == true) {
+        $(".g-recaptcha").removeClass("is-recaptcha-invalid");
+        $.ajax({
+          type: "POST",
+          url: base_url + "home_controller/add_comment_post",
+          data: a,
+          success: function (f) {
+            var e = JSON.parse(f);
+            if (e.type == "message") {
+              document.getElementById("message-comment-result").innerHTML =
+                e.message;
+            } else {
+              document.getElementById("comment-result").innerHTML = e.message;
+            }
+            if (is_recaptcha_enabled == true) {
+              grecaptcha.reset();
+            }
+            $("#make_comment")[0].reset();
+          },
+        });
+      }
+    });
+  });
+  $(document).on("click", ".btn-subcomment-registered", function () {
+    var a = $(this).attr("data-comment-id");
+    var b = { sys_lang_id: sys_lang_id };
+    b[csfr_token_name] = $.cookie(csfr_cookie_name);
+    $("#make_subcomment_registered_" + a).ajaxSubmit({
+      beforeSubmit: function () {
+        var d = $("#make_subcomment_registered_" + a).serializeArray();
+        var c = $.trim(d[0].value);
+        if (c.length < 1) {
+          $(".form-comment-text").addClass("is-invalid");
+          return false;
+        } else {
+          $(".form-comment-text").removeClass("is-invalid");
+        }
+      },
+      type: "POST",
+      url: base_url + "home_controller/add_comment_post",
+      data: b,
+      success: function (d) {
+        var c = JSON.parse(d);
+        if (c.type == "message") {
+          document.getElementById("message-subcomment-result-" + a).innerHTML =
+            c.message;
+        } else {
+          document.getElementById("comment-result").innerHTML = c.message;
+        }
+        $(".visible-sub-comment form").empty();
+      },
+    });
+  });
+  $(document).on("click", ".btn-subcomment", function () {
+    var a = $(this).attr("data-comment-id");
+    var b = { sys_lang_id: sys_lang_id };
+    b[csfr_token_name] = $.cookie(csfr_cookie_name);
+    b.limit = $("#post_comment_limit").val();
+    var c = "#make_subcomment_" + a;
+    $(c).ajaxSubmit({
+      beforeSubmit: function () {
+        var d = $("#make_subcomment_" + a).serializeArray();
+        var e = true;
+        $(d).each(function (g, f) {
+          if ($.trim(f.value).length < 1) {
+            $(c + " [name='" + f.name + "']").addClass("is-invalid");
+            e = false;
+          } else {
+            $(c + " [name='" + f.name + "']").removeClass("is-invalid");
+            b[f.name] = f.value;
+          }
+        });
+        if (is_recaptcha_enabled == true) {
+          if (typeof b["g-recaptcha-response"] === "undefined") {
+            $(c + " .g-recaptcha").addClass("is-recaptcha-invalid");
+            e = false;
+          } else {
+            $(c + " .g-recaptcha").removeClass("is-recaptcha-invalid");
+          }
+        }
+        if (e == false) {
+          return false;
+        }
+      },
+      type: "POST",
+      url: base_url + "home_controller/add_comment_post",
+      data: b,
+      success: function (e) {
+        if (is_recaptcha_enabled == true) {
+          grecaptcha.reset();
+        }
+        var d = JSON.parse(e);
+        if (d.type == "message") {
+          document.getElementById("message-subcomment-result-" + a).innerHTML =
+            d.message;
+        } else {
+          document.getElementById("comment-result").innerHTML = d.message;
+        }
+        $(".visible-sub-comment form").empty();
+      },
+    });
+  });
+  function load_more_comment(c) {
+    var b = parseInt($("#post_comment_limit").val());
+    var a = { post_id: c, limit: b, sys_lang_id: sys_lang_id };
+    a[csfr_token_name] = $.cookie(csfr_cookie_name);
+    $("#load_comment_spinner").show();
+    $.ajax({
+      type: "POST",
+      url: base_url + "home_controller/load_more_comment",
+      data: a,
+      success: function (d) {
+        setTimeout(function () {
+          $("#load_comment_spinner").hide();
+          document.getElementById("comment-result").innerHTML = d;
+        }, 1000);
+      },
+    });
+  }
+  function delete_comment(a, c, b) {
+    swal({ text: b, icon: "warning", buttons: true, dangerMode: true }).then(
+      function (f) {
+        if (f) {
+          var e = parseInt($("#post_comment_limit").val());
+          var d = { id: a, post_id: c, limit: e, sys_lang_id: sys_lang_id };
+          d[csfr_token_name] = $.cookie(csfr_cookie_name);
+          $.ajax({
+            type: "POST",
+            url: base_url + "home_controller/delete_comment_post",
+            data: d,
+            success: function (g) {
+              document.getElementById("comment-result").innerHTML = g;
+            },
+          });
+        }
+      }
+    );
+  }
+  function show_comment_box(a) {
+    $(".visible-sub-comment").empty();
+    var c = parseInt($("#post_comment_limit").val());
+    var b = { comment_id: a, limit: c, sys_lang_id: sys_lang_id };
+    b[csfr_token_name] = $.cookie(csfr_cookie_name);
+    $.ajax({
+      type: "POST",
+      url: base_url + "home_controller/load_subcomment_box",
+      data: b,
+      success: function (d) {
+        $("#sub_comment_form_" + a).append(d);
+      },
+    });
+  }
+  function hide_cookies_warning() {
+    $(".cookies-warning").hide();
+    var a = {};
+    a[csfr_token_name] = $.cookie(csfr_cookie_name);
+    $.ajax({
+      type: "POST",
+      url: base_url + "home_controller/cookies_warning",
+      data: a,
+      success: function (b) {},
+    });
+  }
+  $(document).on("click", ".visual-color-box", function () {
+    var a = $(this).attr("data-color");
+    $(".visual-color-box").empty();
+    $(this).html('<i class="icon-check"></i>');
+    $("#input_user_site_color").val(a);
+  });
+  $(document).on("change", "#Multifileupload", function () {
+    var d = document.getElementById("Multifileupload");
+    if (typeof FileReader != "undefined") {
+      var c = document.getElementById("MultidvPreview");
+      c.innerHTML = "";
+      var f = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+      for (var b = 0; b < d.files.length; b++) {
+        var a = d.files[b];
+        var e = new FileReader();
+        e.onload = function (g) {
+          var h = document.createElement("IMG");
+          h.height = "100";
+          h.width = "100";
+          h.src = g.target.result;
+          h.id = "Multifileupload_image";
+          c.appendChild(h);
+          $("#Multifileupload_button").show();
+        };
+        e.readAsDataURL(a);
+      }
+    } else {
+      alert("This browser does not support HTML5 FileReader.");
+    }
+  });
+  $(document).ready(function () {
+    $(".validate_terms").submit(function (a) {
+      if (!$(".checkbox_terms_conditions").is(":checked")) {
+        a.preventDefault();
+        $(".custom-checkbox .checkbox-icon").addClass("is-invalid");
+      } else {
+        $(".custom-checkbox .checkbox-icon").removeClass("is-invalid");
+      }
+    });
+  });
+  $("#form_validate").validate();
+</script>
+
+<script>
+// Simpan script di file misalnya "custom.js"
+
+// Fungsi untuk menampilkan animasi loading
+function showLoading() {
+    // Tambahkan elemen div dengan id "loading" ke dalam body
+    var loadingDiv = document.createElement('div');
+    loadingDiv.id = 'loading';
+    loadingDiv.innerHTML = '<div class="spinner"></div>';
+    document.body.appendChild(loadingDiv);
+}
+
+// Fungsi untuk menyembunyikan animasi loading
+function hideLoading() {
+    // Hapus elemen div dengan id "loading" dari body
+    var loadingDiv = document.getElementById('loading');
+    if (loadingDiv) {
+        document.body.removeChild(loadingDiv);
+    }
+}
+
+// Event listener untuk menangkap peristiwa berpindah halaman
+window.addEventListener('beforeunload', showLoading);
+
+// Event listener untuk menangkap peristiwa halaman telah dimuat sepenuhnya
+window.addEventListener('load', hideLoading);
+
+// CSS untuk animasi spinner
+var style = document.createElement('style');
+style.innerHTML = `
+    #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+`;
+
+// Tambahkan elemen style ke dalam head
+document.head.appendChild(style);
+</script>
+<script>
+// Simpan script di file misalnya "cookie-activation.js"
+
+// Fungsi untuk memeriksa apakah cookie diaktifkan
+function areCookiesEnabled() {
+    var cookieEnabled = navigator.cookieEnabled;
+    if (!cookieEnabled) {
+        // Coba atur cookie untuk memeriksa apakah dapat diset
+        document.cookie = 'testcookie';
+        cookieEnabled = document.cookie.indexOf('testcookie') !== -1;
+    }
+    return cookieEnabled;
+}
+
+// Periksa apakah cookie diaktifkan saat halaman dimuat
+window.addEventListener('load', function () {
+    if (!areCookiesEnabled()) {
+        // Lakukan sesuatu jika cookie tidak diaktifkan
+        console.log("Cookie tidak diaktifkan. Mohon aktifkan cookie untuk pengalaman terbaik.");
+    } else {
+        // Lakukan sesuatu jika cookie diaktifkan
+        console.log("Cookie diaktifkan.");
+    }
+});
+</script>
+
+  <SCRIPT language=JavaScript>
+
+var message = "Klo mau klik kanan harus bayar!!!!!";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT></body>
+</html>
